@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>नेपाल सरकारको शाखा अधिकृत (रा.प. तृतीय) — English Language Competence Test (20 Marks)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="site-title">📚 नेपाल सरकारको शाखा अधिकृत (रा.प. तृतीय ) पदको प्रथम पत्र अन्तर्गत English Language<br>Competence Test -(20 Marks)</h1>
+      <p class="site-subtitle">English Question Bank for Nepal Officer Level Exams — with historical questions and answers, officer level English syllabus topics</p>
+    </div>
+  </header>
+
+  <main class="container" id="app">
+    <details class="syllabus">
+      <summary>📋 Nepal Officer Level English — Syllabus &amp; Exam Pattern (click to expand)</summary>
+      <div class="syllabus-body">
+        <div class="syllabus-grid">
+          <section>
+            <h3>PSC Section Officer (English Language)</h3>
+            <ul>
+              <li><strong>Section A:</strong> Essay writing on current national/social issues (about 800–1000 words at officer level).</li>
+              <li><strong>Section B:</strong> Translation — English ⇄ Nepali, without losing sense or spirit.</li>
+              <li><strong>Section C:</strong> Reading comprehension passage with questions and answers.</li>
+              <li><strong>Section D:</strong> Summarisation, speech / Note Verbale / diplomatic note writing.</li>
+            </ul>
+          </section>
+          <section>
+            <h3>Nepal Army Officer Cadet &amp; APF Inspector</h3>
+            <ul>
+              <li><strong>Part One (objective):</strong> articles, transformation, question tags, prepositions, direct/indirect speech, active/passive voice, causative verbs, conditionals, tenses, subject–verb agreement, conjunctions.</li>
+              <li><strong>Part Two (subjective):</strong> translation both ways, comprehension (~300 words, 5 questions), essay / personal letter / congratulation or condolence note (250–300 words).</li>
+              <li><strong>Vocabulary:</strong> synonyms, antonyms and word usage.</li>
+            </ul>
+          </section>
+        </div>
+        <p class="syllabus-note">Use the tabs below to practise by topic. Every question includes an answer and explanation; historical items are marked with their source in the explanation.</p>
+      </div>
+    </details>
+
+    <nav class="tabs" id="catTabs"></nav>
+    <div class="toolbar">
+      <input type="text" id="search" placeholder="Search questions (e.g. tenses, essay, grammar)..." autocomplete="off">
+      <button id="randomBtn">Random Question</button>
+    </div>
+    <div class="stats" id="statsLine"></div>
+    <div class="card" id="questionCard"></div>
+    <div class="pager">
+      <button id="prevBtn">← Previous</button>
+      <span id="posLabel" class="pos-label">0 / 0</span>
+      <button id="nextBtn">Next →</button>
+    </div>
+    <section class="practice" id="practice">
+      <div class="practice-head">
+        <div>
+          <h2>⚡ Section-wise Practice</h2>
+          <p>Choose a section, then answer questions one by one. The correct option turns <strong class="green-word">green</strong>, the others turn <strong class="red-word">red</strong>, and the next question appears automatically.</p>
+        </div>
+        <button type="button" id="stopPracticeBtn" class="btn ghost hidden">Stop Practice</button>
+      </div>
+      <div id="practiceSections" class="practice-sections"></div>
+      <div class="practice-actions">
+        <button type="button" id="startPracticeBtn" class="btn">Start Practice</button>
+        <label class="shuffle-label"><input type="checkbox" id="shufflePractice" checked> Shuffle questions</label>
+      </div>
+      <div id="practiceArea" class="practice-area">
+        <p class="practice-idle">Select a section and press <strong>Start Practice</strong> to begin.</p>
+      </div>
+    </section>
+
+    <div class="footer-note" id="footerNote"></div>
+    <footer class="sources">
+      <p><strong>Sources used:</strong> PSC Section Officer English paper 2083 (HaakimSaab), Nepal Army Officer Cadet English syllabus/model questions, APF Inspector syllabus (CollegeNP), EducateNepal officer-level past-paper listings.</p>
+      <p class="small">Historical questions are reproduced for exam practice with model answers and explanations. This is an independent study resource, not an official publication.</p>
+    </footer>
+  </main>
+
+  <script src="data.js"></script>
+  <script src="data2.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
