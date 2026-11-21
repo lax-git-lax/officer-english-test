@@ -43,7 +43,15 @@ body {
   font-family: 'Noto Sans Devanagari', 'Mangal', 'Nirmala UI', 'Segoe UI', sans-serif;
 }
 .site-title .emoji { font-size: 1.5rem; }
-.site-subtitle { margin-top: 6px; font-size: 0.92rem; color: #6b4d00; max-width: 720px; font-weight: 500; }
+.subtitle-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 16px;
+  margin-top: 6px;
+}
+.site-subtitle { font-size: 0.92rem; color: #6b4d00; font-weight: 500; }
+.exam-label { font-size: 0.92rem; color: #3f2d00; font-weight: 700; white-space: nowrap; }
 
 /* ---------- Syllabus panel ---------- */
 .syllabus {
@@ -400,6 +408,8 @@ body {
 
 @media (max-width: 640px) {
   .site-title { font-size: 1.15rem; }
+  .subtitle-row { flex-wrap: wrap; gap: 4px; }
+  .exam-label { font-size: 0.85rem; }
   .syllabus-grid { grid-template-columns: 1fr; }
   .card { padding: 16px; }
   .qtext { font-size: 1.1rem; }
